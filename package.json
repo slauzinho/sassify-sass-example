@@ -5,8 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "./node_modules/.bin/parcel index.html",
-    "prod": "parcel build index.html --public-url ./",
-    "postinstall": "./node_modules/.bin/parcel index.html"
+    "prod": "parcel build index.html --public-url ./"
   },
   "engines": {
     "node": ">=4",
