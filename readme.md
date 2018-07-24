@@ -15,6 +15,10 @@ For future development (without installing all the time) run `yarn dev` or `npm 
 
 To deploy to production run `yarn prod` or `npm prod`.
 
+## Live Demo
+
+You can check the live demo [here](https://sassify.netlify.com)
+
 
 ## License
 
