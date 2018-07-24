@@ -1,16 +1,314 @@
 <!doctype html>
-<html>
+<html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Parcel Boilerplate SASS</title>
-    <meta name="description" content="">
+    <title>SASSIFY</title>
+    <meta name="description" content="Sassify template website">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500" rel="stylesheet">
 </head>
+
 <body>
-    <h1>📦</h1>
-    <h2>🔥🚀💯 it seems like you got the Boilerplate running!</h2>
-    <script src="./js/index.js"></script>
+    <div class="container">
+        <nav id="menu" class="navigation">
+            <div class="navigation__mobile">
+                <img class="navigation__logo" src="./img/logo.svg" alt="Sassify Logo"/>
+                <div id="hamburger" class="navigation__bars">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+            <div class="navigation__menu">
+                <ul class="navigation__items">
+                    <li>
+                        <a class="navigation__link" href="#">Product</a>
+                    </li>
+                    <li>
+                        <a class="navigation__link" href="#">Solutions</a>
+                    </li>
+                    <li>
+                        <a class="navigation__link" href="#">Features</a>
+                    </li>
+                    <li>
+                        <a class="navigation__link" href="#">Pricing</a>
+                    </li>
+                </ul>
+                <ul class="navigation__items">
+                    <li>
+                        <a class="navigation__link--contrast" href="">Login</a>
+                    </li>
+                    <li>
+                        <button class="navigation__button">Get Started</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="header">
+            <svg class="header__bluelight" width="925" height="904" viewBox="0 0 925 904" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M23.4283 5.27658C38.1067 -24.2367 80.1789 -24.3259 94.9824 5.12482L126.575 67.9762C139.946 94.5771 120.608 125.941 90.8356 125.941H27.9842C-1.714 125.941 -21.0558 94.719 -7.83079 68.128L23.4283 5.27658Z"
+                    transform="translate(-12.3438 125.525) rotate(-18)" fill="#171C34" />
+                <path opacity="0.9" fill-rule="evenodd" clip-rule="evenodd" d="M238.788 27.0231C421.882 -95.5163 1104.93 231.419 1086.28 353.781C1067.63 476.143 991.958 983.986 807.508 1002.97C623.057 1021.96 188.08 858.459 54.0349 694.089C-80.0104 529.719 55.6935 149.562 238.788 27.0231Z"
+                    transform="translate(3 -101)" fill="#0074E4" />
+            </svg>
+            <div class="header__cta">
+                <h1 class="heading-primary">Get things done, quick and easy</h1>
+                <p class="paragraph header__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor.</p>
+                <button class="header__button">
+                    Get Started
+                </button>
+            </div>
+            <img class="header__img" width="100%" src="./img/header_img.png" alt="Header Application Img" />
+        </div>
+        <section class="userx">
+            <div class="userx__heading">
+                <h1 class="heading-primary">User Experience, redefined.</h1>
+                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    <br/> Ut pretium pretium tempor.</p>
+            </div>
+            <div class="userx__items">
+                <svg class="userx__svgs" width="421" height="464" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M275.808 21.168c5.487-15.541 26.36-18.15 35.502-4.436L357.815 86.5c8.256 12.386.57 29.13-14.205 30.943l-74.356 9.13c-14.738 1.81-26.24-12.506-21.297-26.508l27.851-78.897z"
+                        fill="#0074E4" />
+                    <path opacity=".9" fill-rule="evenodd" clip-rule="evenodd" d="M32.557 245.319c-17.98-52.22 9.775-109.128 61.995-127.109l123.97-42.686c52.22-17.98 109.129 9.775 127.11 61.995l42.686 123.97c17.98 52.22-9.776 109.129-61.995 127.11l-123.971 42.686c-52.22 17.98-109.128-9.776-127.109-61.995L32.557 245.319z"
+                        fill="#171C34" />
+                </svg>
+                <div class="userx__item">
+                    <img class="userx__icon" src="./img/meditation.png" alt="Header Application Img" />
+                    <h1 class="heading-secundary">Be at peace.</h1>
+                    <p class="paragraph">Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra
+                        id, tempor a tortor.</p>
+                </div>
+                <div class="userx__item">
+                    <img class="userx__icon" src="./img/feasibility.png" alt="Header Application Img" />
+                    <h1 class="heading-secundary">Be at peace.</h1>
+                    <p class="paragraph">Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra
+                        id, tempor a tortor.</p>
+                </div>
+                <div class="userx__item">
+                    <img class="userx__icon" src="./img/value.png" alt="Header Application Img" />
+                    <h1 class="heading-secundary">Be at peace.</h1>
+                    <p class="paragraph">Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra
+                        id, tempor a tortor.</p>
+                </div>
+            </div>
+        </section>
+        <section class="demo">
+            <div class="demo__heading">
+                <h1 class="heading-primary">Simple, yet revolutionary</h1>
+                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor.</p>
+            </div>
+            <div class="demo__img">
+                <svg class="demo__img--1" width="515" height="515" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity=".9" fill-rule="evenodd" clip-rule="evenodd" d="M214.464 4.69l212.82 61.025c63.845 18.307 100.761 84.904 82.453 148.749l-61.025 212.82c-18.307 63.845-84.904 100.761-148.749 82.453l-212.82-61.025C23.298 430.405-13.617 363.808 4.69 299.963l61.025-212.82C84.022 23.298 150.619-13.617 214.464 4.69z"
+                        fill="#1981E6" />
+                </svg>
+                <svg class="demo__img--2" width="484" height="484" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity=".9" fill-rule="evenodd" clip-rule="evenodd" d="M86.948 61.192L269.438 5.4c64.871-19.834 133.537 16.677 153.37 81.548l55.792 182.49c19.834 64.871-16.677 133.537-81.548 153.37L214.562 478.6c-64.871 19.834-133.537-16.677-153.37-81.548L5.4 214.562c-19.834-64.871 16.677-133.537 81.548-153.37z"
+                        fill="#171C34" />
+                </svg>
+                <div class="demo__printscreen">
+                    <img src="./img/browser.png" alt="app demo" />
+                </div>
+            </div>
+            <button class="demo__button">
+                Get Started
+            </button>
+        </section>
+        <section class="customers">
+            <div class="customers__heading">
+                <h1 class="heading-primary">Here's whats our customer's say</h1>
+                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor.</p>
+            </div>
+            <div class="customers__reviews">
+                <div class="customers__review">
+                    <img src="./img/2.jpg" alt="#" class="customers__photo">
+                    <h2 class="heading-terciary">
+                        Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor.
+                    </h2>
+                    <span class="customer__name">Susan Herrera</span>
+                </div>
+                <div class="customers__review">
+                    <img src="./img/94.jpg" alt="#" class="customers__photo">
+                    <h2 class="heading-terciary">
+                        Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor.
+                    </h2>
+                    <span class="customer__name">Barbara Gordon</span>
+                </div>
+                <div class="customers__review">
+                    <img src="./img/41.jpg" alt="#" class="customers__photo">
+                    <h2 class="heading-terciary">
+                        Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor.
+                    </h2>
+                    <span class="customer__name">George Sanchez</span>
+                </div>
+            </div>
+        </section>
+        <section class="pricing">
+            <div class="pricing__heading">
+                <h1 class="heading-primary">Affordable Pricing</h1>
+                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor.</p>
+                <div class="pricing__switch">
+                    <span id="month" class="pricing__switch--active">Billed Monthly </span>
+                    <label class="switch">
+                        <input id="price_switch" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                    <span id="year">Billed Quarterly </span>
+                </div>
+            </div>
+            <div class="pricing__levels">
+                <div class="pricing__level">
+                    <h3 class="pricing__version">Entry</h3>
+                    <div class="pricing__features">
+                        <div class="pricing__feature">
+                            <svg width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.957 4.038l1.538 1.539 4.303-4.28.697.698-5 5L2.26 4.759l.697-.72zM8.99 5H10c0 1.378-.489 2.556-1.466 3.534C7.556 9.51 6.378 10 5 10c-1.378 0-2.556-.489-3.534-1.466C.49 7.556 0 6.378 0 5c0-1.378.489-2.556 1.466-3.534C2.444.49 3.622 0 5 0c.641 0 1.266.128 1.875.385l-.77.769A4.184 4.184 0 0 0 5 1.01c-1.106 0-2.047.388-2.825 1.165C1.398 2.953 1.01 3.895 1.01 5c0 1.106.388 2.047 1.165 2.825C2.953 8.602 3.895 8.99 5 8.99c1.106 0 2.047-.388 2.825-1.165C8.602 7.047 8.99 6.105 8.99 5z"
+                                    fill="#25A318" />
+                            </svg>
+                            Unlimited Someting
+                        </div>
+                        <div class="pricing__feature">
+                            <svg width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5 0c.69 0 1.34.13 1.948.39.609.261 1.14.617 1.592 1.07.453.452.809.983 1.07 1.592A4.9 4.9 0 0 1 10 5a4.9 4.9 0 0 1-.39 1.948A5.017 5.017 0 0 1 8.54 8.54a5.017 5.017 0 0 1-1.592 1.07A4.9 4.9 0 0 1 5 10a4.9 4.9 0 0 1-1.948-.39A5.017 5.017 0 0 1 1.46 8.54 5.017 5.017 0 0 1 .39 6.948 4.9 4.9 0 0 1 0 5c0-.69.13-1.34.39-1.948.261-.609.617-1.14 1.07-1.592A5.017 5.017 0 0 1 3.052.39 4.9 4.9 0 0 1 5 0zm0 9.385a4.22 4.22 0 0 0 1.704-.347 4.415 4.415 0 0 0 2.324-2.334A4.22 4.22 0 0 0 9.375 5a4.22 4.22 0 0 0-.347-1.704 4.457 4.457 0 0 0-.937-1.387A4.457 4.457 0 0 0 6.704.972 4.22 4.22 0 0 0 5 .625a4.22 4.22 0 0 0-1.704.347c-.53.23-.993.543-1.387.937a4.457 4.457 0 0 0-.937 1.387A4.22 4.22 0 0 0 .625 5c0 .605.116 1.173.347 1.704a4.415 4.415 0 0 0 2.324 2.334A4.22 4.22 0 0 0 5 9.385zm1.768-6.153a.298.298 0 0 1 .087.22c0 .088-.029.161-.087.22L5.439 5l1.329 1.328a.298.298 0 0 1 .087.22.298.298 0 0 1-.307.307.298.298 0 0 1-.22-.087L5 5.439 3.672 6.768a.298.298 0 0 1-.22.087.298.298 0 0 1-.307-.307c0-.088.029-.161.087-.22L4.561 5 3.232 3.672a.298.298 0 0 1-.087-.22.298.298 0 0 1 .307-.307c.088 0 .161.029.22.087L5 4.561l1.328-1.329a.298.298 0 0 1 .22-.087c.088 0 .161.029.22.087z"
+                                    fill="#D03602" />
+                            </svg>
+                            Unlimited Everything
+                        </div>
+                        <div class="pricing__feature">
+                            <svg width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5 0c.69 0 1.34.13 1.948.39.609.261 1.14.617 1.592 1.07.453.452.809.983 1.07 1.592A4.9 4.9 0 0 1 10 5a4.9 4.9 0 0 1-.39 1.948A5.017 5.017 0 0 1 8.54 8.54a5.017 5.017 0 0 1-1.592 1.07A4.9 4.9 0 0 1 5 10a4.9 4.9 0 0 1-1.948-.39A5.017 5.017 0 0 1 1.46 8.54 5.017 5.017 0 0 1 .39 6.948 4.9 4.9 0 0 1 0 5c0-.69.13-1.34.39-1.948.261-.609.617-1.14 1.07-1.592A5.017 5.017 0 0 1 3.052.39 4.9 4.9 0 0 1 5 0zm0 9.385a4.22 4.22 0 0 0 1.704-.347 4.415 4.415 0 0 0 2.324-2.334A4.22 4.22 0 0 0 9.375 5a4.22 4.22 0 0 0-.347-1.704 4.457 4.457 0 0 0-.937-1.387A4.457 4.457 0 0 0 6.704.972 4.22 4.22 0 0 0 5 .625a4.22 4.22 0 0 0-1.704.347c-.53.23-.993.543-1.387.937a4.457 4.457 0 0 0-.937 1.387A4.22 4.22 0 0 0 .625 5c0 .605.116 1.173.347 1.704a4.415 4.415 0 0 0 2.324 2.334A4.22 4.22 0 0 0 5 9.385zm1.768-6.153a.298.298 0 0 1 .087.22c0 .088-.029.161-.087.22L5.439 5l1.329 1.328a.298.298 0 0 1 .087.22.298.298 0 0 1-.307.307.298.298 0 0 1-.22-.087L5 5.439 3.672 6.768a.298.298 0 0 1-.22.087.298.298 0 0 1-.307-.307c0-.088.029-.161.087-.22L4.561 5 3.232 3.672a.298.298 0 0 1-.087-.22.298.298 0 0 1 .307-.307c.088 0 .161.029.22.087L5 4.561l1.328-1.329a.298.298 0 0 1 .22-.087c.088 0 .161.029.22.087z"
+                                    fill="#D03602" />
+                            </svg>
+                            Unlimited This
+                        </div>
+                        <div class="pricing__feature">
+                            <svg width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.957 4.038l1.538 1.539 4.303-4.28.697.698-5 5L2.26 4.759l.697-.72zM8.99 5H10c0 1.378-.489 2.556-1.466 3.534C7.556 9.51 6.378 10 5 10c-1.378 0-2.556-.489-3.534-1.466C.49 7.556 0 6.378 0 5c0-1.378.489-2.556 1.466-3.534C2.444.49 3.622 0 5 0c.641 0 1.266.128 1.875.385l-.77.769A4.184 4.184 0 0 0 5 1.01c-1.106 0-2.047.388-2.825 1.165C1.398 2.953 1.01 3.895 1.01 5c0 1.106.388 2.047 1.165 2.825C2.953 8.602 3.895 8.99 5 8.99c1.106 0 2.047-.388 2.825-1.165C8.602 7.047 8.99 6.105 8.99 5z"
+                                    fill="#25A318" />
+                            </svg>
+                            Unlimited That
+                        </div>
+                    </div>
+                    <div class="pricing__price">
+                        <span class="pricing__currency">$</span>
+                        <span id="entry">89.99</span>
+                        <span class="pricing__month">/mo</span>
+                    </div>
+                </div>
+                <div class="pricing__level--best">
+                    <h3 class="pricing__version">
+                        Amateur level
+                    </h3>
+                    <div class="pricing__features">
+                        <div class="pricing__feature">
+                            <svg width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.957 4.038l1.538 1.539 4.303-4.28.697.698-5 5L2.26 4.759l.697-.72zM8.99 5H10c0 1.378-.489 2.556-1.466 3.534C7.556 9.51 6.378 10 5 10c-1.378 0-2.556-.489-3.534-1.466C.49 7.556 0 6.378 0 5c0-1.378.489-2.556 1.466-3.534C2.444.49 3.622 0 5 0c.641 0 1.266.128 1.875.385l-.77.769A4.184 4.184 0 0 0 5 1.01c-1.106 0-2.047.388-2.825 1.165C1.398 2.953 1.01 3.895 1.01 5c0 1.106.388 2.047 1.165 2.825C2.953 8.602 3.895 8.99 5 8.99c1.106 0 2.047-.388 2.825-1.165C8.602 7.047 8.99 6.105 8.99 5z"
+                                    fill="#25A318" />
+                            </svg>
+                            Unlimited Someting
+                        </div>
+                        <div class="pricing__feature">
+                            <svg width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.957 4.038l1.538 1.539 4.303-4.28.697.698-5 5L2.26 4.759l.697-.72zM8.99 5H10c0 1.378-.489 2.556-1.466 3.534C7.556 9.51 6.378 10 5 10c-1.378 0-2.556-.489-3.534-1.466C.49 7.556 0 6.378 0 5c0-1.378.489-2.556 1.466-3.534C2.444.49 3.622 0 5 0c.641 0 1.266.128 1.875.385l-.77.769A4.184 4.184 0 0 0 5 1.01c-1.106 0-2.047.388-2.825 1.165C1.398 2.953 1.01 3.895 1.01 5c0 1.106.388 2.047 1.165 2.825C2.953 8.602 3.895 8.99 5 8.99c1.106 0 2.047-.388 2.825-1.165C8.602 7.047 8.99 6.105 8.99 5z"
+                                    fill="#25A318" />
+                            </svg>
+                            Unlimited Everything
+                        </div>
+                        <div class="pricing__feature">
+                            <svg width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5 0c.69 0 1.34.13 1.948.39.609.261 1.14.617 1.592 1.07.453.452.809.983 1.07 1.592A4.9 4.9 0 0 1 10 5a4.9 4.9 0 0 1-.39 1.948A5.017 5.017 0 0 1 8.54 8.54a5.017 5.017 0 0 1-1.592 1.07A4.9 4.9 0 0 1 5 10a4.9 4.9 0 0 1-1.948-.39A5.017 5.017 0 0 1 1.46 8.54 5.017 5.017 0 0 1 .39 6.948 4.9 4.9 0 0 1 0 5c0-.69.13-1.34.39-1.948.261-.609.617-1.14 1.07-1.592A5.017 5.017 0 0 1 3.052.39 4.9 4.9 0 0 1 5 0zm0 9.385a4.22 4.22 0 0 0 1.704-.347 4.415 4.415 0 0 0 2.324-2.334A4.22 4.22 0 0 0 9.375 5a4.22 4.22 0 0 0-.347-1.704 4.457 4.457 0 0 0-.937-1.387A4.457 4.457 0 0 0 6.704.972 4.22 4.22 0 0 0 5 .625a4.22 4.22 0 0 0-1.704.347c-.53.23-.993.543-1.387.937a4.457 4.457 0 0 0-.937 1.387A4.22 4.22 0 0 0 .625 5c0 .605.116 1.173.347 1.704a4.415 4.415 0 0 0 2.324 2.334A4.22 4.22 0 0 0 5 9.385zm1.768-6.153a.298.298 0 0 1 .087.22c0 .088-.029.161-.087.22L5.439 5l1.329 1.328a.298.298 0 0 1 .087.22.298.298 0 0 1-.307.307.298.298 0 0 1-.22-.087L5 5.439 3.672 6.768a.298.298 0 0 1-.22.087.298.298 0 0 1-.307-.307c0-.088.029-.161.087-.22L4.561 5 3.232 3.672a.298.298 0 0 1-.087-.22.298.298 0 0 1 .307-.307c.088 0 .161.029.22.087L5 4.561l1.328-1.329a.298.298 0 0 1 .22-.087c.088 0 .161.029.22.087z"
+                                    fill="#D03602" />
+                            </svg>
+                            Unlimited This
+                        </div>
+                        <div class="pricing__feature">
+                            <svg width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.957 4.038l1.538 1.539 4.303-4.28.697.698-5 5L2.26 4.759l.697-.72zM8.99 5H10c0 1.378-.489 2.556-1.466 3.534C7.556 9.51 6.378 10 5 10c-1.378 0-2.556-.489-3.534-1.466C.49 7.556 0 6.378 0 5c0-1.378.489-2.556 1.466-3.534C2.444.49 3.622 0 5 0c.641 0 1.266.128 1.875.385l-.77.769A4.184 4.184 0 0 0 5 1.01c-1.106 0-2.047.388-2.825 1.165C1.398 2.953 1.01 3.895 1.01 5c0 1.106.388 2.047 1.165 2.825C2.953 8.602 3.895 8.99 5 8.99c1.106 0 2.047-.388 2.825-1.165C8.602 7.047 8.99 6.105 8.99 5z"
+                                    fill="#25A318" />
+                            </svg>
+                            Unlimited That
+                        </div>
+                    </div>
+                    <div class="pricing__price">
+                        <span class="pricing__currency">$</span>
+                        <span id="amateur">100.99</span>
+                        <span class="pricing__month">/mo</span>
+                    </div>
+                </div>
+                <div class="pricing__level">
+                    <h3 class="pricing__version">Professional Level</h3>
+                    <div class="pricing__features">
+                        <div class="pricing__feature">
+                            <svg width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.957 4.038l1.538 1.539 4.303-4.28.697.698-5 5L2.26 4.759l.697-.72zM8.99 5H10c0 1.378-.489 2.556-1.466 3.534C7.556 9.51 6.378 10 5 10c-1.378 0-2.556-.489-3.534-1.466C.49 7.556 0 6.378 0 5c0-1.378.489-2.556 1.466-3.534C2.444.49 3.622 0 5 0c.641 0 1.266.128 1.875.385l-.77.769A4.184 4.184 0 0 0 5 1.01c-1.106 0-2.047.388-2.825 1.165C1.398 2.953 1.01 3.895 1.01 5c0 1.106.388 2.047 1.165 2.825C2.953 8.602 3.895 8.99 5 8.99c1.106 0 2.047-.388 2.825-1.165C8.602 7.047 8.99 6.105 8.99 5z"
+                                    fill="#25A318" />
+                            </svg>
+                            Unlimited Someting
+                        </div>
+                        <div class="pricing__feature">
+                            <svg width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.957 4.038l1.538 1.539 4.303-4.28.697.698-5 5L2.26 4.759l.697-.72zM8.99 5H10c0 1.378-.489 2.556-1.466 3.534C7.556 9.51 6.378 10 5 10c-1.378 0-2.556-.489-3.534-1.466C.49 7.556 0 6.378 0 5c0-1.378.489-2.556 1.466-3.534C2.444.49 3.622 0 5 0c.641 0 1.266.128 1.875.385l-.77.769A4.184 4.184 0 0 0 5 1.01c-1.106 0-2.047.388-2.825 1.165C1.398 2.953 1.01 3.895 1.01 5c0 1.106.388 2.047 1.165 2.825C2.953 8.602 3.895 8.99 5 8.99c1.106 0 2.047-.388 2.825-1.165C8.602 7.047 8.99 6.105 8.99 5z"
+                                    fill="#25A318" />
+                            </svg>
+                            Unlimited Everything
+                        </div>
+                        <div class="pricing__feature">
+                            <svg width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.957 4.038l1.538 1.539 4.303-4.28.697.698-5 5L2.26 4.759l.697-.72zM8.99 5H10c0 1.378-.489 2.556-1.466 3.534C7.556 9.51 6.378 10 5 10c-1.378 0-2.556-.489-3.534-1.466C.49 7.556 0 6.378 0 5c0-1.378.489-2.556 1.466-3.534C2.444.49 3.622 0 5 0c.641 0 1.266.128 1.875.385l-.77.769A4.184 4.184 0 0 0 5 1.01c-1.106 0-2.047.388-2.825 1.165C1.398 2.953 1.01 3.895 1.01 5c0 1.106.388 2.047 1.165 2.825C2.953 8.602 3.895 8.99 5 8.99c1.106 0 2.047-.388 2.825-1.165C8.602 7.047 8.99 6.105 8.99 5z"
+                                    fill="#25A318" />
+                            </svg>
+                            Unlimited This
+                        </div>
+                        <div class="pricing__feature">
+                            <svg width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.957 4.038l1.538 1.539 4.303-4.28.697.698-5 5L2.26 4.759l.697-.72zM8.99 5H10c0 1.378-.489 2.556-1.466 3.534C7.556 9.51 6.378 10 5 10c-1.378 0-2.556-.489-3.534-1.466C.49 7.556 0 6.378 0 5c0-1.378.489-2.556 1.466-3.534C2.444.49 3.622 0 5 0c.641 0 1.266.128 1.875.385l-.77.769A4.184 4.184 0 0 0 5 1.01c-1.106 0-2.047.388-2.825 1.165C1.398 2.953 1.01 3.895 1.01 5c0 1.106.388 2.047 1.165 2.825C2.953 8.602 3.895 8.99 5 8.99c1.106 0 2.047-.388 2.825-1.165C8.602 7.047 8.99 6.105 8.99 5z"
+                                    fill="#25A318" />
+                            </svg>
+                            Unlimited That
+                        </div>
+                    </div>
+                    <div class="pricing__price">
+                        <span class="pricing__currency">$</span>
+                        <span id="professional">119.19</span>
+                        <span class="pricing__month">/mo</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer__item">
+                <span class="footer__title">Product</span>
+                <a href="#" class="footer__link">Features</a>
+                <a href="#" class="footer__link">Use Cases</a>
+                <a href="#" class="footer__link">Pricing</a>
+            </div>
+            <div id="uses" class="footer__item">
+                <span class="footer__title">Use Cases</span>
+                <a href="#" class="footer__link">ITES</a>
+                <a href="#" class="footer__link">Consultancies</a>
+                <a href="#" class="footer__link">Services Sector</a>
+            </div>
+            <div class="footer__item">
+                <span class="footer__title">Support</span>
+                <a href="#" class="footer__link">Blog</a>
+                <a href="#" class="footer__link">FAQ's</a>
+                <a href="#" class="footer__link">Support</a>
+            </div>
+            <div class="footer__item">
+                <span class="footer__title">Company</span>
+                <a href="#" class="footer__link">About</a>
+                <a href="#" class="footer__link">Privacy Policy</a>
+                <a href="#" class="footer__link">Terms of Service</a>
+            </div>
+            <div class="footer__item">
+                <img src="img/logo.png" alt="SASSIFY Logo" />
+            </div>
+        </footer>
+        <script src="./js/index.js"></script>
+    </div>
 </body>
+
 </html>

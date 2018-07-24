@@ -1,7 +1,439 @@
-body {
-  background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
-  height: 100vh;
-  width: 100%;
+.navigation {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14rem;
+  position: relative;
+
+  @media screen and (max-width: map-get($breakpoints, medium)) {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  &__bars {
+    display: none;
+    @media screen and (max-width: map-get($breakpoints, medium)) {
+      display: inline-block;
+      cursor: pointer;
+    }
+  }
+
+  &__menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: map-get($breakpoints, medium)) {
+      flex-direction: column;
+      background-color: white;
+      border-radius: 5px;
+      padding: 1rem 3rem;
+      visibility: hidden;
+      opacity: 0;
+      transition: all .3s ease-in-out;
+      position: absolute;
+      top: 4rem;
+      left: -3rem;
+    }
+  }
+
+  &__mobile {
+    @media screen and (max-width: map-get($breakpoints, medium)) {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__logo {
+    width: 14rem;
+    height: auto;
+  }
+
+  &__items {
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+    :not(:last-child) {
+      margin-right: 4rem;
+    }
+
+    @media screen and (max-width: map-get($breakpoints, medium)) {
+      flex-direction: column;
+      padding: 0;
+
+      :not(:last-child) {
+        margin-right: 0rem;
+      }
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $text-color;
+
+    &--contrast {
+      text-decoration: none;
+      color: white;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    &:hover {
+      color: $mid-blue;
+    }
+  }
+
+  &__button {
+    width: 18rem;
+    height: 6rem;
+    @include with-btn(white);
+  }
+
+  &__icon {
+    display: none;
+    width: 2rem;
+    height: 2rem;
+    fill: black;
+
+    @media screen and (max-width: map-get($breakpoints, medium)) {
+      display: block;
+    }
+  }
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  grid-gap: 2rem;
+  align-items: center;
+
+  @media screen and (max-width: map-get($breakpoints, medium)) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.6fr 1fr;
+    grid-gap: 0;
+  }
+
+  &__img {
+    @media screen and (max-width: map-get($breakpoints, medium)) {
+      grid-row: 1 / 2;
+    }
+  }
+  
+  &__cta {
+    padding-right: 4rem;
+  }
+  
+  &__title {
+    color: $brand-color;
+    font-weight: 400;
+    font-size: 4.4rem;
+  }
+  
+  &__button {
+    @include with-btn($mid-blue);
+    padding: 1.5rem 4rem;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 500;
+
+    @media screen and (max-width: map-get($breakpoints, medium)) {
+      @include with-btn($brand-color);
+    }
+  }
+  
+  &__text {
+    margin-bottom: 5rem;
+    @media screen and (max-width: map-get($breakpoints, medium)) {
+      color: rgba(255, 255, 255, 0.8);
+    }
+  }
+
+  &__bluelight {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+}
+
+.userx {
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
+  margin-top: 30rem;
+  position: relative;
+
+  @media screen and (max-width: map-get($breakpoints, medium)) {
+    margin-top: 20rem;
+  }
+
+  &__heading {
+    margin-bottom: 11rem;
+  }
+
+  &__items {
+    display: flex;
+
+    @media screen and (max-width: map-get($breakpoints, medium)) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 8rem;
+
+    @media screen and (max-width: map-get($breakpoints, medium)) {
+      margin-right: 0;
+      margin-bottom: 5rem;
+    }
+  }
+
+  &__svgs {
+    position: absolute;
+    top: -20rem;
+    left: -50rem;
+  }
+}
+
+.demo {
+  text-align: center;
+  margin-top: 30rem;
+
+  @media screen and (max-width: map-get($breakpoints, medium)) {
+    margin-top: 20rem;
+  }
+
+  &__heading {
+    margin-bottom: 7.6rem;
+  }
+
+  &__img {
+    position: relative;
+
+    &--1 {
+      position: absolute;
+      top: -5rem;
+      left: -24rem;
+      z-index: -1;
+
+      @media screen and (max-width: map-get($breakpoints, medium)) {
+        left: -20rem;
+      }
+    }
+
+    &--2 {
+      position: absolute;
+      bottom: 0;
+      right: 1rem;
+      z-index: -1;
+
+      @media screen and (max-width: map-get($breakpoints, medium)) {
+        right: -3rem;
+        bottom: -7rem;
+      }
+    }
+  }
+
+  &__printscreen {
+    overflow: hidden;
+    margin-right: -2.9rem;
+  }
+
+  &__button {
+    width: 18rem;
+    height: 6rem;
+    @include with-btn($mid-blue);
+    color: white;
+    margin-top: 10rem;
+  }
+}
+
+.customers {
+  text-align: center;
+  margin-top: 30rem;
+
+  @media screen and (max-width: map-get($breakpoints, medium)) {
+    margin-top: 20rem;
+  }
+
+  &__heading {
+    margin-bottom: 7.6rem;
+  }
+
+  &__reviews {
+    display: flex;
+
+    @media screen and (max-width: map-get($breakpoints, medium)) {
+      flex-direction: column;
+    }
+  }
+
+  &__review:not(:last-child) {
+    margin-right: 12rem;
+    @media screen and (max-width: map-get($breakpoints, medium)) {
+      margin-right: 0;
+      margin-bottom: 6rem;
+    }
+  }
+
+  &__photo {
+    border-radius: 50%;
+  }
+}
+
+.pricing {
+  text-align: center;
+  margin-top: 30rem;
+
+  @media screen and (max-width: map-get($breakpoints, medium)) {
+    margin-top: 20rem;
+  }
+
+  &__switch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+    font-size: 1.4rem;
+    
+    label {
+      margin: 0 3rem;
+      display: flex;
+    }
+
+    &--active {
+      color: $brand-color;
+      font-weight: 500;
+    }
+  }
+
+  &__levels {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: map-get($breakpoints, medium)) {
+      flex-direction: column;
+    }
+  }
+
+  &__level {
+    padding: 3rem 4rem;
+
+    @media screen and (max-width: map-get($breakpoints, medium)) {
+      -webkit-box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1),
+        0 5px 15px rgba(0, 0, 0, 0.07);
+      box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1),
+        0 5px 15px rgba(0, 0, 0, 0.07);
+      border-radius: 4px;
+      border-top: 3px solid $text-color;
+      margin-top: 5rem;
+    }
+
+    &--best {
+      -webkit-box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1),
+        0 5px 15px rgba(0, 0, 0, 0.07);
+      box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1),
+        0 5px 15px rgba(0, 0, 0, 0.07);
+      border-radius: 4px;
+      padding: 3rem 4rem;
+
+      @media screen and (max-width: map-get($breakpoints, medium)) {
+        border-top: 3px solid $mid-blue;
+        margin-top: 5rem;
+      }
+    }
+  }
+
+  &__version {
+    margin-bottom: 4.3rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: $brand-color;
+  }
+
+  &__features {
+    margin-bottom: 3rem;
+    line-height: 3rem;
+    color: $text-color;
+    text-align: start;
+  }
+
+  &__feature {
+    svg {
+      margin-right: 1rem;
+    }
+  }
+
+  &__price {
+    text-align: center;
+    margin: 0 0 0.25em 0;
+    line-height: 0.75;
+    font-weight: 500;
+    font-size: 2.8rem;
+    color: $brand-color;
+  }
+
+  &__currency {
+    vertical-align: top;
+    font-size: 1.8rem;
+    color: $mid-blue;
+  }
+
+  &__month {
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: $text-color;
+  }
+}
+
+.footer {
+  margin-top: 30rem;
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: map-get($breakpoints, medium)) {
+    margin-top: 20rem;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  &__item:last-child {
+    @media screen and (max-width: map-get($breakpoints, medium)) {
+      display: none;
+    }
+  }
+
+  &__title {
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    color: $brand-color;
+    font-weight: 500;
+    font-size: 1.3rem;
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: $text-color;
+    text-decoration: none;
+    margin-bottom: 1.8rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+#uses {
+  @media screen and (max-width: map-get($breakpoints, medium)) {
+    display: none;
+  }
 }

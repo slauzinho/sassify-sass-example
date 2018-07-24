@@ -1,7 +1,7 @@
 {
   "name": "parcel-sass-boilerplate",
   "version": "1.0.0",
-  "description" : "A boilerplate for parcel including sass and the directory structure",
+  "description": "A boilerplate for parcel including sass and the directory structure",
   "license": "MIT",
   "scripts": {
     "dev": "./node_modules/.bin/parcel index.html",
@@ -14,7 +14,6 @@
   },
   "dependencies": {
     "autoprefixer": "^8.2.0",
-    "jquery": "^3.3.1",
     "node-sass": "^4.8.3",
     "normalize.css": "^8.0.0",
     "parcel-bundler": "^1.7.0",

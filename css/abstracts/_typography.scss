@@ -1,0 +1,33 @@
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    /*font-size: 16px;*/
+    line-height: 1.7;
+    color: $text-color;
+}
+
+.heading-primary {
+    color: $brand-color;
+    font-weight: 400;
+    font-size: 4.4rem;
+    backface-visibility: hidden;
+}
+
+.heading-secundary {
+    color: $brand-color;
+    font-weight: 400;
+    font-size: 2.2rem;
+    backface-visibility: hidden;
+}
+
+.heading-terciary {
+    color: $brand-color;
+    font-weight: 400;
+    font-size: 2rem;
+    backface-visibility: hidden;
+}
+
+.paragraph {
+    font-size: $default-font-size;
+    line-height: 2.8rem;
+}
